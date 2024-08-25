@@ -7,7 +7,7 @@ function NavLinks() {
               {
           links.map((link)=> {
             return (
-                <NavLink to={link.href} className={({isActive}) => {
+                <NavLink key={link.label} to={link.href} className={({isActive}) => {
                   return `capitalize font-light tracking-wide w-full ${isActive? 'text-primary' : ''}`
                   }
                 }>
